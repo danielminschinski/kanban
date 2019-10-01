@@ -82,10 +82,14 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
   
-  document.querySelector('#board .create-column').addEventListener('click', function(){
-    var name = prompt('Enter a column name');
-    var column = new Column(name);
-    board.addColumn(column);
+document.querySelector('#board .create-column').addEventListener('click', function(){
+    var name = window.prompt('Enter a column name');
+    if(name === '' || name === null){
+      alert('Anulowałeś');
+    } else{
+      var column = new Column(name);
+      board.addColumn(column);
+    } 
   });
   
   var todoColumn = new Column('To do');
