@@ -30,9 +30,17 @@ document.addEventListener('DOMContentLoaded', function(){
         self.removeColumn();
       }
     
-      if(event.target.classList.contains('add-card')){
-        self.addCard(new Card(prompt('Enter the name of the card')));
+      if (event.target.classList.contains('add-card')) {
+        var name = prompt('Enter a card name');
+        if(name === '' || name === null){
+          alert('Anulowałeś');
+        } else{
+          var card = new Card(name);
+          self.addCard(card);
+        } 
+        // self.addCard(new Card(prompt('Enter the name of the card')));
       }
+
     });
   }
   Column.prototype = {

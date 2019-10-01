@@ -4,7 +4,7 @@ body { padding: 20px; background-size: cover; background: lightgreen; background
 
 button { padding: 5px 10px; margin: 10px 0; color: darkviolet; background-color: transparent; box-shadow: 0px 3px 7px #00003c; outline: none; border: 2px solid #00003c; font-size: 16px; }
 
-button:hover { background-color: white; color: white; cursor: pointer; }
+button:hover { background-color: #00003c; color: white; cursor: pointer; }
 
 .flex { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; border-bottom: 2px solid lightgray; padding-bottom: 5px; margin-bottom: 20px; }
 
